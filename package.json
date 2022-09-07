@@ -1,0 +1,22 @@
+{
+  "name": "threejs_tuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/*.html --open",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "three": "^0.144.0"
+  }
+}
